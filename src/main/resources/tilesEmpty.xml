@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+
+<tiles-definitions>
+
+	<definition name="emptyLayout"
+		template="/WEB-INF/views/layouts/emptyLayout.jsp">
+		<put-attribute name="body" value="" />
+	</definition>
+
+
+ 	<definition name="ketQuaHoaDonsAdmin" extends="emptyLayout" >
+ 	
+		<put-attribute name="body" value="/WEB-INF/views/admin/hoadon/ketQua.jsp" />
+		
+	</definition>
+	
+	
+	<definition name="ketQuaValiAdmin" extends="emptyLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/vali/ketQuaTrangChu.jsp" />
+	</definition>
+	
+	<definition name="ketQuaBienTheValisAdmin" extends="emptyLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/vali/ketQuaBienTheValis.jsp" />
+	</definition>
+	
+	<definition name="ketQuaThongKeThangAdmin" extends="emptyLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/thongke/ketQuaThongKeThangAdmin.jsp" />
+	</definition>
+	
+	<definition name="ketQuaThongKeNamAdmin" extends="emptyLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/thongke/ketQuaThongKeNamAdmin.jsp" />
+	</definition>
+	
+	
+
+</tiles-definitions>
